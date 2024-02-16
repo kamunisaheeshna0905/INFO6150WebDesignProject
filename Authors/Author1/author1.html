@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jane Austen</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="author1.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Books</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Genre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Horror</a>
+                                <a class="dropdown-item" href="#">Romance</a>
+                                <a class="dropdown-item" href="#">Science Fiction</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Authors</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content Container -->
+    <div class="container mt-5">
+        <!-- Author Section -->
+        <div id="about" class="About">
+            <h1 class="text-center">Jane Austen</h1>
+            <img src="images/Jane Austin.jpg" alt="" class="img-fluid rounded-circle mt-3">
+            <p class="text-center mt-3">An English novelist known primarily for her six novels, which implicitly interpret, critique, and comment upon the British landed gentry at the end of the 18th century. Austen's plots often explore the dependence of women on marriage for the pursuit of favourable social standing and economic security. Her works are an implicit critique of the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism.</p>
+        </div> 
+
+        <!-- Books Section -->
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/emma.jpg" alt="Book 1" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Emma by Jane Austen (1815)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/love and friendship.jpg" alt="Book 2" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Love and Friendship by Jane Austen (1790)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/pride and prejudice.jpg" alt="Book 3" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Pride and Prejudice by Jane Austen (1813)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/sense and sensibility.jpg" alt="Book 4" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Sense and Sensibility by Jane Austen (1811)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Bootstrap Components -->
+        <div class="mt-5">
+
+            <!-- Badge -->
+            <span class="badge badge-warning">Premium Users Only</span>
+
+            <!-- Alert -->
+            <div class="alert alert-info" role="alert">
+                Pages & Palettes : Expressive Arts Book Gathering
+                Tue, Feb 27 • 7:00 PM
+            </div>
+            <div class="alert alert-info" role="alert">
+                Rainbow Readers Book Club (3rd - 5th Grade)
+                Thu, Feb 29 • 3:30 PM
+            </div>
+
+            <!-- Accordion -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Messages
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Love what you love and never be ashamed of it. Don't ever give other people the power to make you stop enjoying the things you love.</p>
+                            <p>I’m not a man, but as a woman it’s really refreshing to hear men speak favorably about her work!</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="../Author3/author3.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="../Author1/author1.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="../Author2/author2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="../Author3/author3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="../Author2/author2.html">Next</a></li>
+                </ul>
+            </nav>
+
+                <!-- Add more accordion items as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+<footer class="bg-dark text-white pt-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <div class="col-md-6">
+                <h5><a class="navbar-brand" href="#"><img src="images/logo.jpg" width="25" height="25" class="d-inline-block align-top" alt="">Bookworm Society</a></h5>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">About</a></li>
+                    <li><a class="footer-link" href="#">Privacy</a></li>
+                    <li><a class="footer-link" href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-uppercase">Community</h5>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
