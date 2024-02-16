@@ -11,7 +11,13 @@
     crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/letter-b.png">
+    <style>
+        .is-invalid { border: 2px solid #dc3545;}
+        .footer-link { color: #ffffff; text-decoration: none; }
+        .footer-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,18 +44,90 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="p-5 mb-4 bg-light rounded-3 border">
-                    <div class="container-fluid py-5">
-                        <h1 class="display-5 fw-bold">Welcome to Bookworm Society</h1>
-                        <p class="fs-4">Explore the world's largest collection of books and reviews.</p>
-                        <button class="btn btn-primary btn-lg" type="button">Sign Up Now</button>
+    <div class="container my-4">
+        <div class="jumbotron bg-light rounded-3 p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold">Welcome to Bookworm Society</h1>
+                    <p>Explore the world's largest collection of books and reviews.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Sign Up Now</button>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border-start ps-5">
+                        <h2 class="text-left mb-4">Log in to Bookworm Society</h2>
+                        <form id ="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username or Email</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username or email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            </div>
+                            <div class="d-grid">
+                                <button id="loginSubmitBtn" type="submit" class="btn btn-dark btn-lg">Log In</button>
+                            </div>
+                            <div class="text-left mt-3">
+                                <a href="#">Forgot password?</a> | <a href="#">Sign up</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container my-4 mb-5" id="signupSection">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" required>
+            </div>
+            <div class="d-grid">
+                <button id="signUpSubmitBtn" type="submit" class="btn btn-dark">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer class="bg-dark text-white pt-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <div class="col-md-6">
+                <h5><a class="navbar-brand" href="#"><img src="images/letter-b.png" width="25" height="25" class="d-inline-block align-top" alt="">Bookworm Society</a></h5>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">About</a></li>
+                    <li><a class="footer-link" href="#">Privacy</a></li>
+                    <li><a class="footer-link" href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-uppercase">Community</h5>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a class="footer-link" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
