@@ -1,0 +1,71 @@
+.navbar .bi-bell-fill {
+    font-size: 1.25rem; /* Adjust the size of the icon */
+    margin-left: 1rem; /* Space it a bit from the search form */
+}
+
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover; 
+}
+
+/* carousel itself has a set height */
+.carousel-item {
+    height: 400px;
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 5px; /* Rounded corners for aesthetic appeal */
+    padding: 10px; /* Padding around the text */
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem; /* Bigger font size for visibility */
+    font-weight: bold;
+    color: white; /* White text color for contrast */
+    text-shadow: 3px 3px 6px black; /* Black shadow to enhance readability */
+}
+
+
+.card-img-top {
+    height: 200px;
+   
+    width: 100%; /* Ensures the image covers the width of the card */
+    object-fit: cover;
+    object-position: top;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds a subtle shadow around the cards for better visual separation */
+    transition: 0.3s; /* Adds a smooth transition effect on hover */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Increases shadow to create a lifting effect on hover */
+}
+
+.card-body {
+    padding: 1rem; /* Adjust padding inside the card body */
+}
+
+.card-title {
+    margin-bottom: 0; 
+}
+
+.card-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Ensure responsiveness on smaller devices */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px; /* Adds space between cards on smaller screens */
+    }
+}
+
+
+.footer-link { color: #ffffff; text-decoration: none; }
+        .footer-link:hover { text-decoration: underline; }
